@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 0.94vw;
+}
+
+@font-face {
+    font-family: "industry-black";
+    src: url("./fonts/INDUSTRY/Industry-Black.ttf");
+}
+
+@font-face {
+    font-family: "industry-medium";
+    src: url("./fonts/INDUSTRY/Industry-Medium.ttf");
+}
+
+@font-face {
+    font-family: "industry-bold";
+    src: url("./fonts/INDUSTRY/Industry-Bold.ttf");
+}
+
+@font-face {
+    font-family: "openSans-regular";
+    src: url("./fonts/OPENSANS/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "industry-demi";
+    src: url("./fonts/INDUSTRY/Industry-Demi.ttf");
+}
+
+
+
+header {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header .link-logo{
+    z-index: 99;
+}
+
+ header .link-logo img{
+     width: 21.42rem;
+ }
+header .hamb {
+    color: #fff;
+    font-size: 2rem;
+    z-index: 3;
+}
+header .background-header{
+    position: fixed;
+    
+  width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .4s ease-in;
+    text-align: left;
+    z-index: 2;
+
+}
+
+
+header nav{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    height: 100%;
+    width: 30%;
+    align-items: flex-start;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    
+}
+
+header .background-header.abrir{
+    transform: translateX(0%);
+}
+
+header nav a{
+	color: rgb(138, 134, 134);
+    text-decoration: none;
+    /* margin-right: 1rem; */
+    /* margin-left: 1rem; */
+    font-size: 1.87rem;
+    margin: 2rem 0;
+    font-family: "industry-medium";
+   
+}
+
+header nav a:hover{
+	color: #fff;
+    font-family: "industry-bold";
+    font-size: 4rem;
+}
+
+.img-header-nav{
+    background-image: url()
+}
+
+
+.banner {
+    height: 59.81rem;
+}
+
+.container,
+.container-full {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.container-full {
+    width: 100%;
+}
+
+
+.about-home {
+    position: relative;
+    height: 57.94rem;
+}
+
+.about-home .box-red {
+    background-color: rgba(203, 45, 45, 91%);
+
+    position: relative;
+    width: 47.51rem;
+    height: 40.5rem;
+    top: 17.36rem;
+    left: 55.3%;
+    padding: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem
+}
+
+.about-home .img-about-home {
+    position: absolute;
+    height: 54.05rem;
+}
+
+.about-home .box-red h1 {
+    font-size: 4.13rem;
+    font-family: "industry-black";
+    position: relative;
+    left: -46%;
+    color: black
+}
+
+.about-home .box-red p {
+    font-size: 1.17rem;
+    color: #fff;
+    line-height: 2.10rem;
+    margin-left: 2rem;
+    margin-right: 9rem;
+    margin-top: 3rem;
+    font-family: "openSans-regular";
+
+}
+
+.about-home .btn-white {
+    position: relative;
+    border: 1px solid #fff;
+    padding: 1rem 1.8rem;
+    top: 3rem;
+    left: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "industry-demi";
+    font-size: 1.17rem
+}
+
+.portafolio-home {
+    height: auto;
+    padding: 7rem;
+    text-align: center;
+    padding-bottom: 12rem
+}
+
+.portafolio-home h2 {
+    font-size: 2.73rem;
+    font-family: "industry-black";
+    color: black;
+    margin-bottom: 2rem
+}
+
+.portafolio-home p {
+    font-size: 1.17rem;
+    font-family: "openSans-regular";
+    color: black;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    line-height: 1.95rem
+}
+
+.portafolio-home .p-conoce {
+    margin-top: 3rem
+}
+
+.portafolio-home .img-grop {
+    margin: 3rem auto
+}
+
+.portafolio-home .btn-red {
+    position: relative;
+    border: 1px solid #DD3E3E;
+    padding: 1rem 1.8rem;
+    top: 3rem;
+    left: 2.2rem;
+    color: #DD3E3E;
+    text-decoration: none;
+    font-family: "industry-demi";
+    font-size: 1.17rem
+}
+
+.prefooter {
+    background-image: url(/img/prefooter.png);
+    background-size: cover;
+    height: 35.12rem;
+    text-align: center;
+    padding: 7rem
+}
+
+/* .prefooter img{
+    width: 100vw;
+    position: absolute
+} */
+
+.prefooter .title h2 {
+    font-size: 2.73rem;
+    font-family: "industry-black";
+    color: #fff;
+    position: relative;
+}
+
+.prefooter p {
+    color: #fff;
+    font-family: "openSans-regular";
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    line-height: 1.95rem;
+    font-size: 1.17rem;
+
+}
+
+.logo-aliado {
+    width: 80%;
+    margin: 5rem auto
+}
+
+.logo-aliado img {
+    width: 100%;
+}
+
+.footer-black {
+    background: #000;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 2rem
+}
+
+.footer-black .logo-footer {
+    width: 25%;
+    margin: 2rem auto
+}
+
+.footer-black .logo-footer img {
+    width: 100%
+}
+
+.footer-black p {
+    color: #fff;
+    line-height: 1.95rem;
+    font-size: 1.17rem;
+    font-family: "openSans-regular";
+
+}
+
+.footer-black .box-redes {
+    margin: 1.6rem 0
+}
+
+.footer-black .box-redes i {
+    color: #fff;
+    padding: 0 .8rem;
+    font-size: 1.5rem;
+}
