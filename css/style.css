@@ -57,22 +57,32 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
-header .link-logo{
+
+header .link-logo {
     z-index: 99;
 }
 
- header .link-logo img{
-     width: 21.42rem;
- }
+header .link-logo img {
+    width: 21.42rem;
+}
+
 header .hamb {
     color: #fff;
     font-size: 2rem;
     z-index: 3;
 }
-header .background-header{
+header .close-menu{
+    border: 1px solid red;
+    padding: .6rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+header .background-header {
     position: fixed;
-    
-  width: 100vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -80,11 +90,12 @@ header .background-header{
     transition: all .4s ease-in;
     text-align: left;
     z-index: 2;
+    display: flex;
 
 }
 
 
-header nav{
+header nav {
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -92,36 +103,60 @@ header nav{
     padding-top: 9rem;
     padding-bottom: 9rem;
     height: 100%;
-    width: 30%;
+    width: 40%;
     align-items: flex-start;
     padding-left: 5rem;
     padding-right: 1rem;
-    
+
 }
 
-header .background-header.abrir{
+header .background-header.abrir {
     transform: translateX(0%);
 }
 
-header nav a{
-	color: rgb(138, 134, 134);
+header nav a {
+    color: rgb(138, 134, 134);
     text-decoration: none;
     /* margin-right: 1rem; */
     /* margin-left: 1rem; */
     font-size: 1.87rem;
     margin: 2rem 0;
     font-family: "industry-medium";
-   
+
 }
 
-header nav a:hover{
-	color: #fff;
+.hover-activo{
+    color: #fff;
     font-family: "industry-bold";
     font-size: 4rem;
 }
 
-.img-header-nav{
-    background-image: url()
+/* .background-header #nosotros:hover .img-header-nav2{
+    color: #fff;
+    font-family: "industry-bold";
+    font-size: 4rem;
+} */
+
+/* header nav a:first-child
+{
+    color: #fff;
+    font-family: "industry-bold";
+    font-size: 4rem;
+} */
+
+.img-header-nav {
+    background-image: url("/img/img-nav-1.png");
+    background-size: cover;
+    width: 100%;
+    display: block
+    
+}
+
+.img-header-nav2 {
+    background-image: url("/img/img-nav2.png");
+    background-size: cover;
+    width: 100%;
+    display: block
 }
 
 
@@ -225,6 +260,10 @@ header nav a:hover{
 
 .portafolio-home .img-grop {
     margin: 3rem auto
+}
+.portafolio-home .img-grop img{
+    width: 100%;
+    margin: auto;
 }
 
 .portafolio-home .btn-red {
