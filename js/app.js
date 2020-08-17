@@ -100,3 +100,22 @@ jQuery(".scroll").click(function(e){
     }, 500);
 
 });
+
+
+// function apareceScroll(){
+//     const html = document.getElementsByName("html")[0];
+//     let elementoAparece = document.getElementsByClassName("red");
+//     document.addEventListener( "wheel", function(){
+    
+//         let topVent = html.scrollTop;
+//         for(i=0; i< elementoAparece.length; i++){
+//             let topelemAparece = elementoAparece[i].offsetTop;
+//             if(topVent > topelemAparece -400){
+//                 alert("judith")
+//                 elementoAparece[i].style.opacity = 1;
+//             }
+//         }
+//     })
+// }
+// apareceScroll();
+

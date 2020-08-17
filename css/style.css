@@ -695,11 +695,10 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
 }
 
-
-
-
-
-
+.show-scroll{
+    opacity:0;
+    transition: all 0.5s;
+}
 
 @media (max-width: 768px) {
     html {
