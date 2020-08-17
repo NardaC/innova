@@ -840,11 +840,11 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
 
     .container-all{
-        height: 60vh;
+        height: 100vh;
         
     }
     .banner{
-        height: 60vh;
+        height: 100vh;
     }
 
     .banner img{
@@ -865,7 +865,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         width: auto;
         height: auto;
         left: 2rem;
-        top: 20rem
+        top: 28rem
     }
 
     .style-text-slider h2 {
