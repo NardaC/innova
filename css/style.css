@@ -480,20 +480,6 @@ width: 100vw
    
 }
 
-.line-bottom-red::after {
-    content: "";
-    width: 3rem;
-    border: .4rem solid #ffffff;
-    border-left: none;
-    border-top: none;
-    position: absolute;
-    bottom: 1.5rem;
-    left: 95%;
-    animation-name:line-animation;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-   
-}
 
 
 @-webkit-keyframes line-animation {
