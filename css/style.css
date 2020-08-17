@@ -140,11 +140,8 @@ header.change-color
     position: absolute;
     bottom: .8rem;
     left: 120%;
+    background: #DD3E3E
 }
-
-/* .block {
-    border: .1rem solid #DD3E3E;
-} */
 
 
 .hover-activo {
@@ -240,6 +237,7 @@ header.change-color
     position: absolute;
     bottom: 2rem;
     right: 0%;
+    background: #000
 }
 
 .about-home .box-red p {
@@ -290,6 +288,7 @@ header.change-color
     position: absolute;
     bottom: -1rem;
     left: 48%;
+    background: #DD3E3E
 }
 
 .portafolio-home p {
@@ -355,6 +354,7 @@ header.change-color
     position: absolute;
     bottom: -1.5rem;
     left: 48%;
+    background: #fff
 }
 
 .prefooter p {
@@ -847,7 +847,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
     .portafolio-home {
         padding: 1rem;
-        padding-bottom: 5rem
+        padding-bottom: 6rem
     }
 
     .portafolio-home h2 {
