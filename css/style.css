@@ -417,7 +417,29 @@ header.change-color
 }
 
 
+
 /*silider*/
+.line-slider::after {
+    content: "";
+    width: 5rem;
+    border: .4rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 95%;
+    transform: scaleX(0.1);
+    transform-origin: left;
+    transition:transform 0.8s
+}
+
+.line-slider:hover::after {
+
+    transform: scaleX(1);
+
+}
+
+
 .banner {
     height: 100vh
 }
