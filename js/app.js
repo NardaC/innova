@@ -24,7 +24,31 @@ jQuery(document).ready(function () {
 
     });
 
+});
 
+
+var alto_cabecera =jQuery("header").height();
+jQuery(window).scroll(function(){
+	var t = jQuery(window).scrollTop();
+
+	if(t > alto_cabecera)
+	{
+		jQuery("header").addClass("change-color");
+	}else{
+		jQuery("header").removeClass("change-color");
+	}
+})
+
+jQuery(".scroll").click(function(e){
+    e.preventDefault();
+    setTimeout(function(){
+         jQuery("html,body").animate({
+             "scrollTop":jQuery(".about-home").offset().top,
+            
+         },2000,function(){
+         });
+
+    }, 500);
 
 });
 
