@@ -417,6 +417,7 @@ header.change-color
 }
 
 
+
 /*silider*/
 .banner{
 height: 100vh;
@@ -428,9 +429,56 @@ width: 100vw
 	-o-object-fit: cover;
 	   object-fit: cover;
 	-o-object-position: center;
-	   object-position: center;
-
+       object-position: center;}
+       
+.line-slider::after {
+    content: "";
+    width: 5rem;
+    border: .4rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 95%;
+    animation-name:line-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+   
 }
+
+.line-black::after {
+    content: "";
+    width: 5rem;
+    border: .4rem solid #ffffff;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 95%;
+    animation-name:line-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+   
+}
+
+@-webkit-keyframes line-animation {
+    0% {
+        width: 0.1rem;
+    }
+
+    100% {
+        width: 5rem;
+    }
+}
+
+.banner {
+    height: 100vh
+}
+.banner {
+    height: 100vh
+}
+
+
 
 .leyenda{
     position: absolute;
@@ -808,6 +856,9 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         bottom: 2rem;
         right: 0;
         width: 70%;
+    }
+    .line-slider::after {
+        display: none
     }
 
     .style-text-slider {
