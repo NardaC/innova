@@ -434,7 +434,7 @@ width: 100vw
 .line-slider::after {
     content: "";
     width: 5rem;
-    border: .4rem solid #DD3E3E;
+    border: .3rem solid #DD3E3E;
     border-left: none;
     border-top: none;
     position: absolute;
