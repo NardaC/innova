@@ -417,13 +417,56 @@ header.change-color
 }
 
 
-/*silider*/
-.banner{
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
 
+/*silider*/
+.line-slider::after {
+    content: "";
+    width: 5rem;
+    border: .4rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 95%;
+    animation-name:line-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+   
 }
+
+.line-black::after {
+    content: "";
+    width: 5rem;
+    border: .4rem solid #ffffff;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 95%;
+    animation-name:line-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+   
+}
+
+@-webkit-keyframes line-animation {
+    0% {
+        width: 0.1rem;
+    }
+
+    100% {
+        width: 5rem;
+    }
+}
+
+.banner {
+    height: 100vh
+}
+.banner {
+    height: 100vh
+}
+
+
 
 .leyenda{
     position: absolute;
