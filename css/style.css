@@ -126,6 +126,10 @@ header nav a {
     position: relative;
 
 }
+header.change-color
+{
+	background-color: rgba(0,0,0,0.7);
+}
 
 .line-red::after {
     content: "";
@@ -558,13 +562,14 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
 .scroll {
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     bottom: 1.72rem;
     left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .letter-scroll {
