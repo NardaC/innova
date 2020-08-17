@@ -418,11 +418,18 @@ header.change-color
 
 
 /*silider*/
-.banner {
-    height: 100vh
+.banner{
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+
 }
 
-
+.leyenda{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+}
 
 .container-all {
     position: relative;
@@ -782,7 +789,12 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     }
     
 
-
+    .leyenda{
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
+        width: 70%;
+    }
 
     .style-text-slider {
         width: auto;
