@@ -423,10 +423,22 @@ header.change-color
 
 
 /*silider*/
+.banner{
+height: 100vh;
+width: 100vw
+}
+.banner img{
+    height: 100%;
+    width: 100vw;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+       object-position: center;}
+       
 .line-slider::after {
     content: "";
     width: 5rem;
-    border: .4rem solid #DD3E3E;
+    border: .3rem solid #DD3E3E;
     border-left: none;
     border-top: none;
     position: absolute;
@@ -512,7 +524,8 @@ header.change-color
 .container-all {
     position: relative;
     overflow: hidden;
-    /* height: 100vh; */
+    height: 100vh;
+    z-index: 1;
 }
 
 .slide {
@@ -524,6 +537,7 @@ header.change-color
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    
 }
 
 .item-slide {
@@ -859,19 +873,27 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         display: none
     }
 
-    .banner {
+
+    .container-all{
+        height: 60vh;
+        
+    }
+    .banner{
         height: 60vh;
     }
-    .container-all{
-        height: 100%
+
+    .banner img{
+        height: 100%;
     }
-    
 
     .leyenda{
         position: absolute;
         bottom: 2rem;
         right: 0;
         width: 70%;
+    }
+    .line-slider::after {
+        display: none
     }
 
     .style-text-slider {
