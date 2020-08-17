@@ -591,6 +591,11 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
 }
 
+.scroll-show{
+    opacity: 0;
+    transition: all 100%;
+    transition-duration: 2s;
+}
 
 
 
@@ -909,7 +914,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     }
 
     .footer-black .box-redes i {
-        font-size: 1.2rem
+        font-size: 1.2rem 
     }
 
 }
