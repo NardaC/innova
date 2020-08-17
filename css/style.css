@@ -428,18 +428,26 @@ header.change-color
     position: absolute;
     bottom: 1.5rem;
     left: 95%;
-    transform: scaleX(0.1);
-    transform-origin: left;
-    transition:transform 0.8s
-}
-
-.line-slider:hover::after {
-
-    transform: scaleX(1);
-
+    animation-name:line-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+   
 }
 
 
+@-webkit-keyframes line-animation {
+    0% {
+        width: 1rem;
+    }
+
+    100% {
+        width: 5rem;
+    }
+}
+
+.banner {
+    height: 100vh
+}
 .banner {
     height: 100vh
 }
