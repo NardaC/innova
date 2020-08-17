@@ -7,19 +7,69 @@ jQuery(document).ready(function () {
         jQuery("#inicio").hover(function (e) {
             e.preventDefault();
             jQuery(this).addClass("hover-activo line-red");
-            jQuery("#nosotros").removeClass("hover-activo block");
+            jQuery("#nosotros").removeClass("hover-activo line-red");
+            jQuery("#noticias").removeClass("hover-activo line-red");
+            jQuery("#portafolio").removeClass("hover-activo line-red");
+            jQuery("#equipo").removeClass("hover-activo line-red");
+            jQuery("#contacto").removeClass("hover-activo line-red");
             jQuery(".img-header-nav2").removeClass("img-header-nav2");
             jQuery("#box-img-header").addClass("img-header-nav");
-
 
         });
         jQuery("#nosotros").hover(function (e) {
             e.preventDefault();
-            jQuery(this).addClass("hover-activo");
-            jQuery("#inicio").removeClass("hover-activo block");
+            jQuery(this).addClass("hover-activo line-red");
+            jQuery("#inicio").removeClass("hover-activo line-red");
+            jQuery("#noticias").removeClass("hover-activo line-red");
+            jQuery("#portafolio").removeClass("hover-activo line-red");
+            jQuery("#equipo").removeClass("hover-activo line-red");
+            jQuery("#contacto").removeClass("hover-activo line-red");
             jQuery(".img-header-nav").removeClass("img-header-nav");
             jQuery("#box-img-header").addClass("img-header-nav2");
-
+        });
+        jQuery("#noticias").hover(function (e) {
+            e.preventDefault();
+            jQuery(this).addClass("hover-activo line-red");
+            jQuery("#inicio").removeClass("hover-activo line-red");
+            jQuery("#nosotros").removeClass("hover-activo line-red");
+            jQuery("#portafolio").removeClass("hover-activo line-red");
+            jQuery("#equipo").removeClass("hover-activo line-red");
+            jQuery("#contacto").removeClass("hover-activo line-red");
+            jQuery(".img-header-nav").removeClass("img-header-nav2");
+            jQuery("#box-img-header").addClass("img-header-nav");
+        });
+        jQuery("#portafolio").hover(function (e) {
+            e.preventDefault();
+            jQuery(this).addClass("hover-activo line-red");
+            jQuery("#inicio").removeClass("hover-activo line-red");
+            jQuery("#nosotros").removeClass("hover-activo line-red");
+            jQuery("#noticias").removeClass("hover-activo line-red");
+            jQuery("#equipo").removeClass("hover-activo line-red");
+            jQuery("#contacto").removeClass("hover-activo line-red");
+            jQuery(".img-header-nav").removeClass("img-header-nav");
+            jQuery("#box-img-header").addClass("img-header-nav2");
+        });
+        jQuery("#equipo").hover(function (e) {
+            e.preventDefault();
+            jQuery(this).addClass("hover-activo line-red ");
+            jQuery("#inicio").removeClass("hover-activo line-red");
+            jQuery("#nosotros").removeClass("hover-activo line-red");
+            jQuery("#noticias").removeClass("hover-activo line-red");
+            jQuery("#portafolio").removeClass("hover-activo line-red");
+            jQuery("#contacto").removeClass("hover-activo line-red");
+            jQuery(".img-header-nav").removeClass("img-header-nav2");
+            jQuery("#box-img-header").addClass("img-header-nav");
+        });
+        jQuery("#contacto").hover(function (e) {
+            e.preventDefault();
+            jQuery(this).addClass("hover-activo line-red");
+            jQuery("#inicio").removeClass("hover-activo line-red");
+            jQuery("#nosotros").removeClass("hover-activo line-red");
+            jQuery("#noticias").removeClass("hover-activo line-red");
+            jQuery("#portafolio").removeClass("hover-activo line-red");
+            jQuery("#equipo").removeClass("hover-activo line-red");
+            jQuery(".img-header-nav").removeClass("img-header-nav");
+            jQuery("#box-img-header").addClass("img-header-nav2");
         });
 
     });
@@ -43,8 +93,7 @@ jQuery(".scroll").click(function(e){
     e.preventDefault();
     setTimeout(function(){
          jQuery("html,body").animate({
-             "scrollTop":jQuery(".about-home").offset().top,
-            
+             "scrollTop":jQuery(".about-home").offset().top, 
          },2000,function(){
          });
 
