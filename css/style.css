@@ -71,7 +71,8 @@ header .hamb {
     font-size: 2rem;
     z-index: 3;
 }
-header .close-menu{
+
+header .close-menu {
     border: 1px solid red;
     padding: .6rem;
     border-radius: 50%;
@@ -122,10 +123,27 @@ header nav a {
     font-size: 1.87rem;
     margin: 2rem 0;
     font-family: "industry-medium";
+    position: relative;
 
 }
 
-.hover-activo{
+.line-red::after {
+    content: "";
+    width: 9rem;
+    border: .1rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: .8rem;
+    left: 120%;
+}
+
+/* .block {
+    border: .1rem solid #DD3E3E;
+} */
+
+
+.hover-activo {
     color: #fff;
     font-family: "industry-bold";
     font-size: 4rem;
@@ -149,7 +167,6 @@ header nav a {
     background-size: cover;
     width: 100%;
     display: block
-    
 }
 
 .img-header-nav2 {
@@ -204,6 +221,17 @@ header nav a {
     color: black
 }
 
+.about-home .box-red h1::after {
+    content: "";
+    width: 3rem;
+    border: .3rem solid #000;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: 2rem;
+    right: 0%;
+}
+
 .about-home .box-red p {
     font-size: 1.17rem;
     color: #fff;
@@ -231,14 +259,27 @@ header nav a {
     height: auto;
     padding: 7rem;
     text-align: center;
-    padding-bottom: 12rem
+    padding-bottom: 12rem;
+
 }
 
 .portafolio-home h2 {
     font-size: 2.73rem;
     font-family: "industry-black";
     color: black;
-    margin-bottom: 2rem
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.portafolio-home h2::after {
+    content: "";
+    width: 3.5rem;
+    border: .3rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: -1rem;
+    left: 48%;
 }
 
 .portafolio-home p {
@@ -257,7 +298,8 @@ header nav a {
 .portafolio-home .img-grop {
     margin: 3rem auto
 }
-.portafolio-home .img-grop img{
+
+.portafolio-home .img-grop img {
     width: 100%;
     margin: auto;
 }
@@ -267,7 +309,6 @@ header nav a {
     border: 1px solid #DD3E3E;
     padding: 1rem 1.8rem;
     top: 3rem;
-    left: 2.2rem;
     color: #DD3E3E;
     text-decoration: none;
     font-family: "industry-demi";
@@ -294,10 +335,22 @@ header nav a {
     position: relative;
 }
 
+
+.prefooter .title h2::after {
+    content: "";
+    width: 3.5rem;
+    border: .3rem solid #fff;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 48%;
+}
+
 .prefooter p {
     color: #fff;
     font-family: "openSans-regular";
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     margin-bottom: 3rem;
     margin-left: 12rem;
     margin-right: 12rem;
@@ -626,5 +679,31 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     
     100%{
         transform: translate3d(calc(-100% * 2), 0, 0);
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 4.6vw;
+    }
+
+    .container {
+        width: 100%
+    }
+
+    header {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+
+    header .link-logo img {
+        width: 21.42rem;
+    }
+    
+    .about-home .box-red h1 {
+        font-size: 1.68rem;
+        left: -46%;
     }
 }
