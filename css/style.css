@@ -886,7 +886,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         width: auto;
         height: auto;
         left: 2rem;
-        top: 28rem
+        top: 75%
     }
 
     .style-text-slider h2 {
