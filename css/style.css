@@ -145,14 +145,21 @@ header.change-color
     animation-iteration-count: 1;
 }
 
-@-webkit-keyframes line-animation-menu {
+
+/* @-webkit-keyframes line-animation-menu {
     0% {
         width: 0.1rem;
     }
 
     100% {
         width: 9rem;
-    }
+    } */
+
+.portafolio-home h2::after {
+    width: 2rem;
+    border: .1rem solid #DD3E3E;
+    left: 48%
+
 }
 
 .hover-activo {
@@ -299,14 +306,25 @@ header.change-color
 
 }
 
-.portafolio-home h2 {
+/* .portafolio-home h2 {
     font-size: 2.73rem;
     font-family: "industry-black";
     color: black;
     margin-bottom: 3rem;
     position: relative;
 }
-
+ */
+.portafolio-home h2::after {
+    content: "";
+    width: 3.5rem;
+    border: .3rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: -1rem;
+    left: 41%;
+    background: #DD3E3E
+}
 
 
 .portafolio-home p {
@@ -957,7 +975,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         width: auto;
         height: auto;
         left: 2rem;
-        top: 28rem
+        top: 75%
     }
 
     .style-text-slider h2 {
@@ -997,7 +1015,13 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         font-size: 1.68rem;
         left: 0%;
     }
-
+    .about-home .box-red h1::after {
+        border: .1rem solid #000;
+        bottom: 1rem;
+        right: 5%;
+        width: 2rem
+    
+    }
 
     .about-home .box-red p {
         font-size: 0.79rem;
