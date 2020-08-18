@@ -31,6 +31,7 @@ window.addEventListener("scroll", function(){
     let tamanoDePantalla = window.innerHeight/1.2;
     if(positionObj1<tamanoDePantalla){
         animacion.style.opacity = 1;
+        
     }
     if(positionObj2<tamanoDePantalla){
         animacion2.style.opacity = 1;
