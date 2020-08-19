@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
             jQuery(".img-header-nav4").removeClass("img-header-nav4");
             jQuery(".img-header-nav5").removeClass("img-header-nav5");
             jQuery(".img-header-nav6").removeClass("img-header-nav6");
-            jQuery("#box-img-header").addClass("img-header-nav2 kenburns-left");
+            jQuery("#box-img-header").addClass("img-header-nav2 ");
         });
         jQuery("#noticias").hover(function (e) {
             e.preventDefault();
@@ -48,7 +48,7 @@ jQuery(document).ready(function () {
             jQuery(".img-header-nav4").removeClass("img-header-nav4");
             jQuery(".img-header-nav5").removeClass("img-header-nav5");
             jQuery(".img-header-nav6").removeClass("img-header-nav6");;
-            jQuery("#box-img-header").addClass("img-header-nav3 kenburns-left");
+            jQuery("#box-img-header").addClass("img-header-nav3 ");
         });
         jQuery("#portafolio").hover(function (e) {
             e.preventDefault();
@@ -63,7 +63,7 @@ jQuery(document).ready(function () {
             jQuery(".img-header-nav2").removeClass("img-header-nav2");
             jQuery(".img-header-nav5").removeClass("img-header-nav5");
             jQuery(".img-header-nav6").removeClass("img-header-nav6");
-            jQuery("#box-img-header").addClass("img-header-nav4 kenburns-left");
+            jQuery("#box-img-header").addClass("img-header-nav4 ");
         });
         jQuery("#equipo").hover(function (e) {
             e.preventDefault();
@@ -78,7 +78,7 @@ jQuery(document).ready(function () {
             jQuery(".img-header-nav2").removeClass("img-header-nav2");
             jQuery(".img-header-nav4").removeClass("img-header-nav4");
             jQuery(".img-header-nav6").removeClass("img-header-nav6");
-            jQuery("#box-img-header").addClass("img-header-nav5 kenburns-left");
+            jQuery("#box-img-header").addClass("img-header-nav5 ");
         });
         jQuery("#contacto").hover(function (e) {
             e.preventDefault();
@@ -93,7 +93,7 @@ jQuery(document).ready(function () {
             jQuery(".img-header-nav2").removeClass("img-header-nav2");
             jQuery(".img-header-nav4").removeClass("img-header-nav4");
             jQuery(".img-header-nav5").removeClass("img-header-nav5");
-            jQuery("#box-img-header").addClass("img-header-nav6 kenburns-left");
+            jQuery("#box-img-header").addClass("img-header-nav6 ");
         });
 
     });
