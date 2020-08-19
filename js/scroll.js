@@ -30,24 +30,31 @@ window.addEventListener("scroll", function(){
     console.log(positionObj1)
     let tamanoDePantalla = window.innerHeight/1.2;
     if(positionObj1<tamanoDePantalla){
-        animacion.style.opacity = 1;
+        animacion.style.animationName =" slide-top";
+        animacion.style.opacity =1;
         
     }
     if(positionObj2<tamanoDePantalla){
+        animacion2.style.animationName =" slide-top";
         animacion2.style.opacity = 1;
     }
     if(positionObj3<tamanoDePantalla){
-        animacion3.style.opacity = 1
+        animacion3.style.animationName = letter;
     }
     if(positionObj4<tamanoDePantalla){
-        animacion4.style.opacity = 1
+        animacion4.style.animationName = letter;
     }
     if(positionObj5<tamanoDePantalla){
-        animacion5.style.opacity = 1
+        animacion5.style.animationName = letter;
     }
     if(positionObj6<tamanoDePantalla){
-        animacion6.style.opacity = 1
+        animacion6.style.animationName = letter;
     }
 
 })
 
+// .to-split>span .line-container span {
+//     transform: translateY(101%);
+//     padding-bottom: 0.5rem;
+//     white-space: pre;
+// }

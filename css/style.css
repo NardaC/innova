@@ -703,11 +703,29 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 }
 
 .scroll-show{
+    -webkit-animation: 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+    animation: 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
     opacity: 0;
-    transition: all 100%;
-    transition-duration: 2s;
 }
 
+
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+                opacity: 0.5;
+      }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 1;
+    }
+  }
 .show-desktop{
     display: block;
 }
