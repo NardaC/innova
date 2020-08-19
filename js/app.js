@@ -12,12 +12,12 @@ jQuery(document).ready(function () {
             jQuery("#portafolio").removeClass("hover-activo line-red");
             jQuery("#equipo").removeClass("hover-activo line-red");
             jQuery("#contacto").removeClass("hover-activo line-red");
-            jQuery(".img-header-nav2").removeClass("img-header-nav2 kenburns-left");
+            jQuery(".img-header-nav2").removeClass("img-header-nav2");
             jQuery(".img-header-nav3").removeClass("img-header-nav3");
             jQuery(".img-header-nav4").removeClass("img-header-nav4");
             jQuery(".img-header-nav5").removeClass("img-header-nav5");
             jQuery(".img-header-nav6").removeClass("img-header-nav6");
-            jQuery("#box-img-header").addClass("img-header-nav kenburns-left");
+            jQuery("#box-img-header").addClass("img-header-nav");
 
         });
         jQuery("#nosotros").hover(function (e) {

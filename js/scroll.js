@@ -30,24 +30,35 @@ window.addEventListener("scroll", function(){
     console.log(positionObj1)
     let tamanoDePantalla = window.innerHeight/1.2;
     if(positionObj1<tamanoDePantalla){
-        animacion.style.opacity = 1;
+        animacion.style.animationName ="scale-in-ver-bottom";
+        animacion.style.opacity =1;
         
     }
     if(positionObj2<tamanoDePantalla){
+        animacion2.style.animationName ="scale-in-ver-bottom";
         animacion2.style.opacity = 1;
     }
     if(positionObj3<tamanoDePantalla){
-        animacion3.style.opacity = 1
+        animacion3.style.animationName ="scale-in-ver-bottom";
+        animacion2.style.opacity = 1;
     }
     if(positionObj4<tamanoDePantalla){
-        animacion4.style.opacity = 1
+        animacion4.style.animationName ="scale-in-ver-bottom";
+        animacion2.style.opacity = 1;
     }
     if(positionObj5<tamanoDePantalla){
-        animacion5.style.opacity = 1
+        animacion5.style.animationName ="scale-in-ver-bottom";
+        animacion2.style.opacity = 1;
     }
     if(positionObj6<tamanoDePantalla){
-        animacion6.style.opacity = 1
+        animacion6.style.animationName ="scale-in-ver-bottom";
+        animacion2.style.opacity = 1;
     }
 
 })
 
+// .to-split>span .line-container span {
+//     transform: translateY(101%);
+//     padding-bottom: 0.5rem;
+//     white-space: pre;
+// }
