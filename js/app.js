@@ -12,8 +12,12 @@ jQuery(document).ready(function () {
             jQuery("#portafolio").removeClass("hover-activo line-red");
             jQuery("#equipo").removeClass("hover-activo line-red");
             jQuery("#contacto").removeClass("hover-activo line-red");
-            jQuery(".img-header-nav2").removeClass("img-header-nav2");
-            jQuery("#box-img-header").addClass("img-header-nav");
+            jQuery(".img-header-nav2").removeClass("img-header-nav2 kenburns-left");
+            jQuery(".img-header-nav3").removeClass("img-header-nav3");
+            jQuery(".img-header-nav4").removeClass("img-header-nav4");
+            jQuery(".img-header-nav5").removeClass("img-header-nav5");
+            jQuery(".img-header-nav6").removeClass("img-header-nav6");
+            jQuery("#box-img-header").addClass("img-header-nav kenburns-left");
 
         });
         jQuery("#nosotros").hover(function (e) {
@@ -25,7 +29,11 @@ jQuery(document).ready(function () {
             jQuery("#equipo").removeClass("hover-activo line-red");
             jQuery("#contacto").removeClass("hover-activo line-red");
             jQuery(".img-header-nav").removeClass("img-header-nav");
-            jQuery("#box-img-header").addClass("img-header-nav2");
+            jQuery(".img-header-nav3").removeClass("img-header-nav3");
+            jQuery(".img-header-nav4").removeClass("img-header-nav4");
+            jQuery(".img-header-nav5").removeClass("img-header-nav5");
+            jQuery(".img-header-nav6").removeClass("img-header-nav6");
+            jQuery("#box-img-header").addClass("img-header-nav2 kenburns-left");
         });
         jQuery("#noticias").hover(function (e) {
             e.preventDefault();
@@ -35,8 +43,12 @@ jQuery(document).ready(function () {
             jQuery("#portafolio").removeClass("hover-activo line-red");
             jQuery("#equipo").removeClass("hover-activo line-red");
             jQuery("#contacto").removeClass("hover-activo line-red");
-            jQuery(".img-header-nav").removeClass("img-header-nav2");
-            jQuery("#box-img-header").addClass("img-header-nav");
+            jQuery(".img-header-nav").removeClass("img-header-nav");
+            jQuery(".img-header-nav2").removeClass("img-header-nav2");
+            jQuery(".img-header-nav4").removeClass("img-header-nav4");
+            jQuery(".img-header-nav5").removeClass("img-header-nav5");
+            jQuery(".img-header-nav6").removeClass("img-header-nav6");;
+            jQuery("#box-img-header").addClass("img-header-nav3 kenburns-left");
         });
         jQuery("#portafolio").hover(function (e) {
             e.preventDefault();
@@ -47,7 +59,11 @@ jQuery(document).ready(function () {
             jQuery("#equipo").removeClass("hover-activo line-red");
             jQuery("#contacto").removeClass("hover-activo line-red");
             jQuery(".img-header-nav").removeClass("img-header-nav");
-            jQuery("#box-img-header").addClass("img-header-nav2");
+            jQuery(".img-header-nav3").removeClass("img-header-nav3");
+            jQuery(".img-header-nav2").removeClass("img-header-nav2");
+            jQuery(".img-header-nav5").removeClass("img-header-nav5");
+            jQuery(".img-header-nav6").removeClass("img-header-nav6");
+            jQuery("#box-img-header").addClass("img-header-nav4 kenburns-left");
         });
         jQuery("#equipo").hover(function (e) {
             e.preventDefault();
@@ -57,8 +73,12 @@ jQuery(document).ready(function () {
             jQuery("#noticias").removeClass("hover-activo line-red");
             jQuery("#portafolio").removeClass("hover-activo line-red");
             jQuery("#contacto").removeClass("hover-activo line-red");
-            jQuery(".img-header-nav").removeClass("img-header-nav2");
-            jQuery("#box-img-header").addClass("img-header-nav");
+            jQuery(".img-header-nav").removeClass("img-header-nav");
+            jQuery(".img-header-nav3").removeClass("img-header-nav3");
+            jQuery(".img-header-nav2").removeClass("img-header-nav2");
+            jQuery(".img-header-nav4").removeClass("img-header-nav4");
+            jQuery(".img-header-nav6").removeClass("img-header-nav6");
+            jQuery("#box-img-header").addClass("img-header-nav5 kenburns-left");
         });
         jQuery("#contacto").hover(function (e) {
             e.preventDefault();
@@ -69,7 +89,11 @@ jQuery(document).ready(function () {
             jQuery("#portafolio").removeClass("hover-activo line-red");
             jQuery("#equipo").removeClass("hover-activo line-red");
             jQuery(".img-header-nav").removeClass("img-header-nav");
-            jQuery("#box-img-header").addClass("img-header-nav2");
+            jQuery(".img-header-nav3").removeClass("img-header-nav3");
+            jQuery(".img-header-nav2").removeClass("img-header-nav2");
+            jQuery(".img-header-nav4").removeClass("img-header-nav4");
+            jQuery(".img-header-nav5").removeClass("img-header-nav5");
+            jQuery("#box-img-header").addClass("img-header-nav6 kenburns-left");
         });
 
     });

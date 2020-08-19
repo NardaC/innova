@@ -143,7 +143,9 @@ header.change-color
     animation-name:line-animation-menu;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    z-index: 20;
 }
+
 
 @-webkit-keyframes line-animation-menu {
     0% {
@@ -153,6 +155,12 @@ header.change-color
     100% {
         width: 9rem;
     }
+}
+.portafolio-home h2::after {
+    width: 2rem;
+    border: .1rem solid #DD3E3E;
+    left: 48%
+
 }
 
 .hover-activo {
@@ -202,18 +210,43 @@ header.change-color
 } */
 
 .img-header-nav {
-    background-image: url("https://innovasports.net/innova/img/img-nav-1.png");
+    background-image: url(../img/menu-img/inicio.png);
     background-size: cover;
     width: 100%;
     display: block
 }
 
 .img-header-nav2 {
-    background-image: url("https://innovasports.net/innova/img/img-nav2.png");
+    background-image: url(../img/menu-img/nosotros.png);
     background-size: cover;
     width: 100%;
     display: block
 }
+.img-header-nav3 {
+    background-image: url(../img/menu-img/noticias.png);
+    background-size: cover;
+    width: 100%;
+    display: block
+}
+.img-header-nav4 {
+    background-image: url(../img/menu-img/portafolio.png);
+    background-size: cover;
+    width: 100%;
+    display: block
+}
+.img-header-nav5 {
+    background-image: url(../img/menu-img/Equipo.png);
+    background-size: cover;
+    width: 100%;
+    display: block
+}
+.img-header-nav6 {
+    background-image: url(../img/menu-img/contacto.png);
+    background-size: cover;
+    width: 100%;
+    display: block
+}
+
 
 
 .container,
@@ -307,6 +340,17 @@ header.change-color
     position: relative;
 }
 
+.portafolio-home h2::after {
+    content: "";
+    width: 3.5rem;
+    border: .3rem solid #DD3E3E;
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    bottom: -1rem;
+    left: 41%;
+    background: #DD3E3E
+}
 
 
 .portafolio-home p {
@@ -880,6 +924,59 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     transition: all 0.5s;
 }
 
+
+
+
+
+.kenburns-left {
+	-webkit-animation: kenburns-left 6s ease-out both;
+	        animation: kenburns-left 6s ease-out both;
+}
+
+
+ @-webkit-keyframes kenburns-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 50%;
+              transform-origin: 16% 50%;
+    }
+    50% {
+        -webkit-transform: scale(1.25) translate(-20px, 15px);
+                transform: scale(1.25) translate(-20px, 15px);
+        -webkit-transform-origin: left;
+                transform-origin: left;
+      }
+      100% {
+          -webkit-transform: scale(1) translate(0, 0);
+                  transform: scale(1) translate(0, 0);
+          -webkit-transform-origin: left;
+                  transform-origin: left;
+        }
+  }
+  @keyframes kenburns-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 50%;
+              transform-origin: 16% 50%;
+    }
+    50% {
+      -webkit-transform: scale(1.25) translate(-20px, 15px);
+              transform: scale(1.25) translate(-20px, 15px);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+    100% {
+        -webkit-transform: scale(1) translate(0, 0);
+                transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: left;
+                transform-origin: left;
+      }
+  }
+
+  
+
 @media (max-width: 768px) {
     html {
         font-size: 4.6vw;
@@ -913,7 +1010,8 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         align-items: center;
         padding-left: 1rem;
         padding-right: 1rem;
-        z-index: 2
+        z-index: 2;
+        padding-top: 10rem;
     }
 
     header nav a {
@@ -975,7 +1073,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         width: auto;
         height: auto;
         left: 2rem;
-        top: 28rem
+        top: 75%
     }
 
     .style-text-slider h2 {
@@ -1015,7 +1113,13 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
         font-size: 1.68rem;
         left: 0%;
     }
-
+    .about-home .box-red h1::after {
+        border: .1rem solid #000;
+        bottom: 1rem;
+        right: 5%;
+        width: 2rem
+    
+    }
 
     .about-home .box-red p {
         font-size: 0.79rem;
@@ -1134,8 +1238,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     
 
 .line-logo{
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -1146,7 +1249,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 }
 
 .logo-portfolio{
-        padding: 2rem 0rem;
+        padding: 1rem 0rem;
         filter: none;
         opacity: 1;
         height: 85%;
